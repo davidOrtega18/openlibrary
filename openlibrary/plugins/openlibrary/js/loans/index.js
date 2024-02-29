@@ -1,5 +1,5 @@
 export function initLoans() {
-  window.q.push(function() {
+  $(function() {
     $("a.leave").on('click', function() {
       var title = $(this).parents("tr").find(".book").text();
       $("#leave-waitinglist-dialog strong").text(title);
