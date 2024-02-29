@@ -525,5 +525,11 @@ jQuery(function () {
         import(/* webpackChunkName: "breadcrumb-select" */ './breadcrumb_select')
             .then(module => module.initBreadcrumbSelect(crumbs));
     }
+    
+    const loans = document.querySelectorAll('#leave-waitinglist-dialog');
+    if (loans.length) {
+        import(/* webpackChunkName: "loans" */ './loans')
+            .then(module => module.initLoans(loans));
+    }
 
 });
