@@ -526,7 +526,7 @@ jQuery(function () {
             .then(module => module.initBreadcrumbSelect(crumbs));
     }
     
-    const loans = document.querySelectorAll('.leave');
+    const loans = document.querySelectorAll('#leave-waitinglist-dialog');
     if (loans.length) {
         import(/* webpackChunkName: "loans" */ './loans')
             .then(module => module.initLoans(loans));
